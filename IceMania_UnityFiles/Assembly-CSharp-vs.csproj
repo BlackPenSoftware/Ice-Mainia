@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Personal Assets\Scripts\Environment\Background.cs" />
      <Compile Include="Assets\Personal Assets\Scripts\Environment\Clouds.cs" />
+     <Compile Include="Assets\Personal Assets\Scripts\Environment\Ground.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />

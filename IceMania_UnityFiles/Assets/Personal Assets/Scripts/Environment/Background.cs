@@ -15,11 +15,7 @@ public class Background : MonoBehaviour {
 		PlayerCamera.camera.backgroundColor = background;
 
 	}
+		
+	void Update() {}
 
-
-	void Update() {
-	
-
-
-	}
 }
