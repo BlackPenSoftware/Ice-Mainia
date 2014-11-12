@@ -11,25 +11,33 @@ public class Ground : MonoBehaviour {
 	public int Tile_y = 0;
 	public int Tile_width = 64;
 	public int Tile_height = 64;
-
 	public int TilesInChunk = 0;
+
+	int ScreenSize_Width = Screen.width;
+	int ScreenSize_Height = Screen.height;
 
 	/* Booleans */
 	public bool SetTileToBottom = true;
 	public bool SetChunkToMax = true;
 
+	/* Floats */
+	float TileStartX = 0.0f;
+	float TileStartY = 0.0f;
+	float TileStartZ = 0.0f;
 
 	void GenGround() {
 
 		int i = 0;
-		int offset = 0;
-		int offsetamount = Tile_width;
+		float offset = 0;
+		float offsetamount = Tile_width;
 
 		for (i = 0; i <= TilesInChunk; i++) {
 
-			Instantiate(DirtTile_Prefab, new Vector3(0, 0, 0), Quaternion.identity); // Not Working Needs to Draw The Ground For The Truck Useing Prefabs Because Of Box Collider 
-			offset = offset + offsetamount;
+			/* Vectors */
+			Vector2 TilePos = new Vector2 (TileStartX + offset, TileStartY);
 
+			Instantiate(DirtTile_Prefab, TilePos, Quaternion.identity);
+		
 		}
 	}
 
