@@ -9,7 +9,7 @@ public class Ground : MonoBehaviour {
 	/* Interger Creation */
 	public int Tile_x = 0;
 	public int Tile_y = 0;
-	public int Tile_width = 64;
+	public int Tile_width = 32;
 	public int Tile_height = 64;
 	public int TilesInChunk = 0;
 
@@ -38,6 +38,8 @@ public class Ground : MonoBehaviour {
 
 			Instantiate(DirtTile_Prefab, TilePos, Quaternion.identity);
 		
+			offset += 2;
+
 		}
 	}
 
