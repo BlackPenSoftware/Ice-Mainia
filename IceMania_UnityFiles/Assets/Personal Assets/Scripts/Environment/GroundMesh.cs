@@ -6,6 +6,13 @@ public class GroundMesh : MonoBehaviour {
 	public float width = 50.0F;
 	public float height = 50.0F;
 
+	float x_pos = 0.0F;
+	float y_pos = 0.0F;
+	float x = 0.0F;
+	float y = 0.0F;
+	float x_2 = 0.0F;
+	float y_2 = 0.0F;
+
 	void Start(){
 	
 		MeshFilter GroundFilter = GetComponent<MeshFilter> ();
@@ -14,9 +21,12 @@ public class GroundMesh : MonoBehaviour {
 		GroundFilter.mesh = Ground;
 
 		// Vertices
-		Vector3[] verticies = new Vector3[4] {
+		Vector3[] verticies = new Vector3[] {
 
-			new Vector3 (0, 0, 0), new Vector3 (width, 0, 0), new Vector3 (0, height, 0), new Vector3 (width, height, 0)
+			new Vector3 (0, 0, 0),	// First Position Or Bottom Right Hand Corner 
+			new Vector3 (width, 0, 0),	// Second Position Or Bottom Right Corner 
+			new Vector3 (0, height, 0), // Third Position Or Top Left Corner
+			new Vector3 (width, height, 0)	// Forth Position Or Top Right Corner
 
 		};
 

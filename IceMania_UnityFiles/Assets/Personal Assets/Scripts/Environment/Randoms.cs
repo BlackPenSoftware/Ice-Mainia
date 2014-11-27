@@ -4,6 +4,7 @@ using System.Collections;
 public class Randoms : MonoBehaviour {
 
 	public bool ShowDebug = false;
+	public bool InfiniteGen = false;
 
 	int x_pos = 0;
 	int y_pos = 0;
@@ -24,7 +25,7 @@ public class Randoms : MonoBehaviour {
 
 		player_X = Player.transform.position.x; 
 
-		if (true) {
+		if (InfiniteGen == true || player_X > x - 200) {
 
 			int range = Random.Range (-3, 3) * timesrange;
 
