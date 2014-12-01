@@ -6,8 +6,16 @@ public class GroundMesh : MonoBehaviour {
 	public float width = 50.0F;
 	public float height = 50.0F;
 
+	/** 
+	 * 
+	 * float width = Screen.width;
+	 * float height = Screen.height;
+	 * 
+	 **/
+
 	float x_pos = 0.0F;
 	float y_pos = 0.0F;
+
 	float x = 0.0F;
 	float y = 0.0F;
 	float x_2 = 0.0F;
